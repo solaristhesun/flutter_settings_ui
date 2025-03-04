@@ -40,7 +40,7 @@ class AndroidSettingsSection extends StatelessWidget {
             start: 24,
             end: 24,
           ),
-          child: DefaultTextStyle(
+          child: DefaultTextStyle.merge(
             style: TextStyle(
               color: theme.themeData.titleTextColor,
             ),
