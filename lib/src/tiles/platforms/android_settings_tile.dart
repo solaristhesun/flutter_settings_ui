@@ -80,7 +80,7 @@ class AndroidSettingsTile extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      DefaultTextStyle(
+                      DefaultTextStyle.merge(
                         style: TextStyle(
                           color: enabled
                               ? theme.themeData.settingsTileTextColor
@@ -93,7 +93,7 @@ class AndroidSettingsTile extends StatelessWidget {
                       if (value != null)
                         Padding(
                           padding: const EdgeInsets.only(top: 4.0),
-                          child: DefaultTextStyle(
+                          child: DefaultTextStyle.merge(
                             style: TextStyle(
                               color: enabled
                                   ? theme.themeData.tileDescriptionTextColor
@@ -105,7 +105,7 @@ class AndroidSettingsTile extends StatelessWidget {
                       else if (description != null)
                         Padding(
                           padding: const EdgeInsets.only(top: 4.0),
-                          child: DefaultTextStyle(
+                          child: DefaultTextStyle.merge(
                             style: TextStyle(
                               color: enabled
                                   ? theme.themeData.tileDescriptionTextColor
