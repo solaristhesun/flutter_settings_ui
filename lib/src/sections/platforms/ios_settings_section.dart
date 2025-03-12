@@ -38,7 +38,7 @@ class IOSSettingsSection extends StatelessWidget {
                 start: 18,
                 bottom: 5 * scaleFactor,
               ),
-              child: DefaultTextStyle(
+              child: DefaultTextStyle.merge(
                 style: TextStyle(
                   color: theme.themeData.titleTextColor,
                   fontSize: 13,
