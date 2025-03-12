@@ -112,7 +112,7 @@ class IOSSettingsTileState extends State<IOSSettingsTile> {
       decoration: BoxDecoration(
         color: theme.themeData.settingsListBackground,
       ),
-      child: DefaultTextStyle(
+      child: DefaultTextStyle.merge(
         style: TextStyle(
           color: theme.themeData.titleTextColor,
           fontSize: 13,
@@ -142,7 +142,7 @@ class IOSSettingsTileState extends State<IOSSettingsTile> {
           ),
         if (widget.tileType == SettingsTileType.navigationTile &&
             widget.value != null)
-          DefaultTextStyle(
+          DefaultTextStyle.merge(
             style: TextStyle(
               color: widget.enabled
                   ? theme.themeData.trailingTextColor
@@ -245,7 +245,7 @@ class IOSSettingsTileState extends State<IOSSettingsTile> {
                                       ? 3
                                       : 12.5 * scaleFactor,
                                 ),
-                                child: DefaultTextStyle(
+                                child: DefaultTextStyle.merge(
                                   style: TextStyle(
                                     color: widget.enabled
                                         ? theme.themeData.settingsTileTextColor
@@ -261,7 +261,7 @@ class IOSSettingsTileState extends State<IOSSettingsTile> {
                                   padding: const EdgeInsets.only(bottom: 6),
                                   child: Row(
                                     children: [
-                                      DefaultTextStyle(
+                                      DefaultTextStyle.merge(
                                         style: TextStyle(
                                           color: theme.themeData.titleTextColor,
                                           fontSize: 13,
